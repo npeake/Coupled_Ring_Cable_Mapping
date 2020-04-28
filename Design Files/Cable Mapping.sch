@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Cable Mapping-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -877,14 +878,10 @@ Text Label 5880 6680 0    50   ~ 0
 32_AWG
 Text Label 5880 6480 0    50   ~ 0
 32_AWG
-Text Notes 8100 7330 0    118  ~ 0
-Designed by Noah Peake at SCIPP\n
 Text Notes 8140 7640 0    51   ~ 0
 4-22-20
-Text Notes 7430 6930 0    197  ~ 0
-Coupled Ring Mapping
 $Comp
-L SCIPP_Symbols:Generic_Connector(9-48) Glenair_1:HV,TempInt,CAN
+L Cable-Mapping-rescue:Generic_Connector(9-48)-SCIPP_Symbols Glenair_1:HV,TempInt,CAN
 U 1 1 5EA4F92B
 P 6370 4220
 F 0 "Glenair_1:HV,TempInt,CAN" H 6470 6190 50  0000 L CNN
@@ -895,7 +892,7 @@ F 3 "" H 6310 6280 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SCIPP_Symbols:Generic_Connector(49-56) Glenair_1:LPmodes
+L Cable-Mapping-rescue:Generic_Connector(49-56)-SCIPP_Symbols Glenair_1:LPmodes
 U 1 1 5EA5380A
 P 6380 6730
 F 0 "Glenair_1:LPmodes" H 6460 7150 50  0000 L CNN
@@ -905,4 +902,10 @@ F 3 "" H 6350 7280 50  0001 C CNN
 	1    6380 6730
 	1    0    0    -1  
 $EndComp
+Text Notes 7030 7030 0    98   ~ 0
+\nATLAS ITk Pixel Detector Project\nCoupled Ring Cable Mapping\nDesign by Noah Peake (UC Santa Cruz)\n
+Text Notes 7150 1600 0    98   ~ 0
+8+48 pin custom circular connector \n(Glenair UK)
+Text Notes 7150 3350 0    79   ~ 0
+shields tied to \n56-pin connector shell
 $EndSCHEMATC
